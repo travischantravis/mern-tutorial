@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+// a functional component: without state and lifecycle methods
 const Exercise = (props) => (
   <tr>
     <td>{props.exercise.username}</td>
@@ -22,6 +23,7 @@ const Exercise = (props) => (
   </tr>
 );
 
+// a class component
 export default class ExercisesList extends Component {
   constructor(props) {
     super(props);
